@@ -1958,3 +1958,353 @@ Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 14:47:25) [GET]
   [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
 Rendering recipes/index
 Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:13:33) [GET]
+  [4;35;1mRecipe Load (0.3ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering recipes/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:13:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering recipes/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/2]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 15:13:38) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering recipes/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/recipes/2/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2011-12-15 15:13:46) [PUT]
+  Parameters: {"commit"=>"Save Changes", "authenticity_token"=>"HMvmIDgLzce73iLwOo4DbjXVNZyfeT6AZSchY1K1BIE=", "id"=>"2", "recipe"=>{"title"=>"Chunky Bacon Butty", "method"=>"Toast Bread, Grill Bacon, butter toast, add hp sauce"}}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+  [4;35;1mRecipe Update (0.2ms)[0m   [0mUPDATE "recipes" SET "updated_at" = '2011-12-15 15:13:46', "method" = 'Toast Bread, Grill Bacon, butter toast, add hp sauce' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/recipes/2
+Completed in 97ms (DB: 0) | 302 Found [http://localhost/recipes/2]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:13:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering recipes/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/2]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:31:18) [GET]
+  [4;35;1mRecipe Load (0.5ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering recipes/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:31:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Rendering recipes/show
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes/3]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 15:31:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Rendering recipes/edit
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/recipes/3/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2011-12-15 15:31:24) [PUT]
+  Parameters: {"commit"=>"Save Changes", "authenticity_token"=>"HMvmIDgLzce73iLwOo4DbjXVNZyfeT6AZSchY1K1BIE=", "id"=>"3", "recipe"=>{"title"=>"Sausage Butty and Tomato Sauce", "method"=>"Toast Bread, Grill Sausage. Add Sauce"}}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Redirected to http://localhost:3000/recipes/3
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/recipes/3]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:31:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Rendering recipes/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/3]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:31:26) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering recipes/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:31:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 5) [0m
+Rendering recipes/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/5]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 15:31:31) [GET]
+Rendering recipes/new
+
+ActionView::TemplateError (Missing template recipes/_form.erb in view path app/views) on line #3 of app/views/recipes/new.html.erb:
+1: <h1>Create New Recipe</h1>
+2: 
+3: <%= render :partial => 'form' %>
+
+    app/views/recipes/new.html.erb:3
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 15:32:30) [GET]
+Rendering recipes/new
+
+ActionView::TemplateError (Missing template recipes/_form.erb in view path app/views) on line #3 of app/views/recipes/new.html.erb:
+1: <h1>Create New Recipe</h1>
+2: 
+3: <%= render :partial => 'form' %>
+
+    app/views/recipes/new.html.erb:3
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:32:31) [GET]
+  [4;36;1mRecipe Load (0.5ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/recipes/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:32:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Rendering recipes/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/3]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 15:32:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Rendering recipes/edit
+
+ActionView::TemplateError (Missing template recipes/_form.erb in view path app/views) on line #4 of app/views/recipes/edit.html.erb:
+1: <h1>Editing recipe: <%= @recipe.title%></h1>
+2: 
+3: 
+4: <%= render :partial => 'form' %>
+
+    app/views/recipes/edit.html.erb:4
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 15:33:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRecipe Load (0.1ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Rendering recipes/edit
+
+ActionView::TemplateError (Missing template recipes/_form.erb in view path app/views) on line #4 of app/views/recipes/edit.html.erb:
+1: <h1>Editing recipe: <%= @recipe.title%></h1>
+2: 
+3: 
+4: <%= render :partial => 'form' %>
+
+    app/views/recipes/edit.html.erb:4
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (88.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 15:33:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRecipe Load (0.2ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 3) [0m
+Rendering recipes/edit
+
+ActionView::TemplateError (Missing template recipes/_form.erb in view path app/views) on line #4 of app/views/recipes/edit.html.erb:
+1: <h1>Editing recipe: <%= @recipe.title%></h1>
+2: 
+3: 
+4: <%= render :partial => 'form' %>
+
+    app/views/recipes/edit.html.erb:4
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:33:29) [GET]
+  [4;35;1mRecipe Load (0.6ms)[0m   [0mSELECT * FROM "recipes" [0m
+Rendering recipes/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:33:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRecipe Load (0.1ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering recipes/show
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes/2]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 15:33:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 2) [0m
+Rendering recipes/edit
+
+ActionView::TemplateError (Missing template recipes/_form.erb in view path app/views) on line #4 of app/views/recipes/edit.html.erb:
+1: <h1>Editing recipe: <%= @recipe.title%></h1>
+2: 
+3: 
+4: <%= render :partial => 'form' %>
+
+    app/views/recipes/edit.html.erb:4
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (92.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:34:16) [GET]
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering recipes/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/recipes]
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 15:34:17) [GET]
+Rendering recipes/new
+
+ActionView::TemplateError (Missing template recipes/_form.erb in view path app/views) on line #3 of app/views/recipes/new.html.erb:
+1: <h1>Create New Recipe</h1>
+2: 
+3: <%= render :partial => 'form' %>
+
+    app/views/recipes/new.html.erb:3
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RecipesController#new (for 127.0.0.1 at 2011-12-15 15:35:35) [GET]
+Rendering recipes/new
+Rendered recipes/_form (6.8ms)
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/recipes/new]
+
+
+Processing RecipesController#create (for 127.0.0.1 at 2011-12-15 15:35:49) [POST]
+  Parameters: {"commit"=>"Save Recipe", "authenticity_token"=>"HMvmIDgLzce73iLwOo4DbjXVNZyfeT6AZSchY1K1BIE=", "recipe"=>{"title"=>"Curry", "method"=>"Add the chicken, and curry paste"}}
+  [4;35;1mRecipe Create (0.2ms)[0m   [0mINSERT INTO "recipes" ("created_at", "title", "method", "updated_at") VALUES('2011-12-15 15:35:49', 'Curry', 'Add the chicken, and curry paste', '2011-12-15 15:35:49')[0m
+Redirected to http://localhost:3000/
+Completed in 83ms (DB: 0) | 302 Found [http://localhost/recipes]
+
+
+Processing RecipesController#index (for 127.0.0.1 at 2011-12-15 15:35:49) [GET]
+  [4;36;1mRecipe Load (0.4ms)[0m   [0;1mSELECT * FROM "recipes" [0m
+Rendering recipes/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:35:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 5) [0m
+Rendering recipes/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/5]
+
+
+Processing RecipesController#edit (for 127.0.0.1 at 2011-12-15 15:35:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mRecipe Load (0.3ms)[0m   [0;1mSELECT * FROM "recipes" WHERE ("recipes"."id" = 5) [0m
+Rendering recipes/edit
+Rendered recipes/_form (6.4ms)
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/recipes/5/edit]
+
+
+Processing RecipesController#update (for 127.0.0.1 at 2011-12-15 15:35:58) [PUT]
+  Parameters: {"commit"=>"Save Recipe", "authenticity_token"=>"HMvmIDgLzce73iLwOo4DbjXVNZyfeT6AZSchY1K1BIE=", "id"=>"5", "recipe"=>{"title"=>"Spag Bol", "method"=>"Pasta, Meat and Tomato Sauace"}}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 5) [0m
+  [4;36;1mRecipe Update (0.2ms)[0m   [0;1mUPDATE "recipes" SET "updated_at" = '2011-12-15 15:35:58', "method" = 'Pasta, Meat and Tomato Sauace' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/recipes/5
+Completed in 97ms (DB: 0) | 302 Found [http://localhost/recipes/5]
+
+
+Processing RecipesController#show (for 127.0.0.1 at 2011-12-15 15:35:58) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mRecipe Load (0.2ms)[0m   [0mSELECT * FROM "recipes" WHERE ("recipes"."id" = 5) [0m
+Rendering recipes/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/recipes/5]
