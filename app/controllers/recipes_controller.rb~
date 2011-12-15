@@ -17,19 +17,34 @@ class RecipesController < ApplicationController
   
   def update
     @recipe = Recipe.find(params[:id])
-    @recipe.update_attributes(params[:recipe])
+    if @recipe.save
+        @recipe.update_attributes(params[:recipe])
+    flash[:notice] = "Recipe updated!"
     redirect_to @recipe
+    else
+          flash[:notice] = "Was not Updated!!"
+          redirect_to edit_recipe_path
+    end
   end
   
   def create
     @recipe = Recipe.create(params[:recipe])
+    if @recipe.save
+        @recipe.update_attributes(params[:recipe])
+    flash[:notice] = "Recipe updated!"
+    redirect_to @recipe
+    else
+          flash[:notice] = "Was not Updated!!"
+          redirect_to edit_recipe_path
+    end
+    
     redirect_to root_url
   end
   
   def destroy
     @recipe = Recipe.find(params[:id])
     @recipe.delete
-    redirect_to recipes_[ath
+    redirect_to recipes_path
   end
 
 end

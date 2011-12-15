@@ -17,12 +17,21 @@ class RecipesController < ApplicationController
   
   def update
     @recipe = Recipe.find(params[:id])
-    @recipe.update_attributes(params[:recipe])
+    if @recipe.save
+        @recipe.update_attributes(params[:recipe])
+    flash[:notice] = "Recipe updated!"
     redirect_to @recipe
+    else
+          flash[:notice] = "Was not Updated!!"
+          redirect_to edit_recipe_path
+    end
   end
   
   def create
     @recipe = Recipe.create(params[:recipe])
+        flash[:notice] = " New Recipe Created!"
+    
+    
     redirect_to root_url
   end
   

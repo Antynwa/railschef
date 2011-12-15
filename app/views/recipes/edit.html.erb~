@@ -1,17 +1,9 @@
-<h1>Editing recipe: <%= @recipe.title%></h1>
-
-<% form_for @recipe do |f| %>
-
-<p>
-  <%= f.label :title %><br />
-  <%= f.text_field :title %>
-</p>
-<p>
-  <%= f.label :method %><br />
-  <%= f.text_area :method %>
-</p>
-<p>
-<%= f.submit %> | <%= link_to "Cancel", recipes_path %>
-</p>
+<% if flash[:notice] %>
+<div class = "flash"><%= flash[:notice] %></div>
 <% end %>
 
+
+<h1>Editing recipe: <%= @recipe.title%></h1>
+
+
+<%= render :partial => 'form' %>

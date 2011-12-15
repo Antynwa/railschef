@@ -1,0 +1,17 @@
+<html>
+<body>
+<head>
+<title>Rails Chef!</title>
+<%= stylesheet_link_tag 'base'%>
+
+  <% if flash[:notice] %>
+  <div class = "flash"><%= flash[:notice] %></div>  
+  <% end %>
+  
+  <div id = "wrapper">
+  <%= yield %>
+  
+  
+  </div>
+  </body>
+  </html>
